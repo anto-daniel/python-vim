@@ -1,6 +1,7 @@
 install:
 	cp -rfv .vimrc ${HOME}
 	cp -rfv .vim ${HOME}
+	apt-get update
 	apt-get install python-pip -y 
 	pip install -U pip
 	pip install --user git+git://github.com/lokaltog/powerline
