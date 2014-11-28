@@ -57,8 +57,11 @@ set number
 set tw=79
 set nowrap
 set fo-=t
-set colorcolumn=80
-highlight ColorColumn ctermbg=233
+
+" if exists("&colorcolumn")
+"   set colorcolumn=80
+" endif
+"highlight ColorColumn ctermbg=233
 
 " easier formatting of paragraphs
 vmap Q gq
