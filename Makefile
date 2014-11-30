@@ -20,5 +20,6 @@ install:
 	cp -rf .vimrc ${HOME}
 	cp -rf .vim ${HOME}
 
+
 clean:
 	rm -rf powerline powerline-fonts
