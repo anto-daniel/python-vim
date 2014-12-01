@@ -133,12 +133,4 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 " Python folding
 set nofoldenable
 
-set laststatus=2
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-set t_Co=256
-let g:Powerline_symbols = "fancy"
-let g:Powerline_symbols = "compatible"
-let g:Powerline_cache_enabled = 1
-set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline
+
