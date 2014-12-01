@@ -19,6 +19,7 @@ powerline-fonts:
 install:
 	cp -rf .vimrc ${HOME}
 	cp -rf .vim ${HOME}
+	/bin/bash -xx .new.sh
 
 
 clean:
