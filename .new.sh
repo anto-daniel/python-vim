@@ -17,6 +17,6 @@ set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline
 EOM
 cd && userpath=$(pwd)
 user=` echo $userpath | cut -d/ -f3`
-chown -R $user:$user $HOME/.vim
-chown -R $user:$user $HOME/.vimrc
+chown -R $user:users $HOME/.vim
+chown -R $user:users $HOME/.vimrc
 chmod -R 755 $HOME/.vim*
