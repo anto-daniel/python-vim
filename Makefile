@@ -1,4 +1,4 @@
-ajl: source install
+all: source install
 
 source: powerline powerline-fonts
 
