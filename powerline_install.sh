@@ -18,6 +18,6 @@ mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/
 powerline-daemon -q
 cat >> $HOME/.bashrc << EOM
 export PATH=$PATH:$HOME/.local/bin
-. /home/antodaniel/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+source $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 EOM
 source ~/.bashrc
