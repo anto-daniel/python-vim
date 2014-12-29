@@ -3,8 +3,7 @@ all: source install
 source: powerline powerline-fonts
 
 powerline:
-	git clone https://github.com/Lokaltog/powerline.git
-	cd powerline && python setup.py build && python setup.py install
+	pip install --user git+git://github.com/Lokaltog/powerline
 
 powerline-fonts:
 	apt-get install fontconfig wget -y
