@@ -1,5 +1,5 @@
 #!/bin/bash 
-sudo apt-get install python gcc wget fontconfig socat -y
+sudo apt-get install python python-dev make gcc wget fontconfig socat -y
 pip install --user psutil
 pip install --user mercurial
 pip install --user pygit2
