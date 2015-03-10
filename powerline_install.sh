@@ -16,7 +16,7 @@ fc-cache -vf ~/.fonts/
 mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 powerline-daemon -q
 cat >> $HOME/.bashrc << EOM
-export PATH=$PATH:$HOME/.local/bin
-source $HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+export PATH=\$PATH:\$HOME/.local/bin
+source \$HOME/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 EOM
 source ~/.bashrc
