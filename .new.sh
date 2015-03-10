@@ -1,7 +1,7 @@
 #!/bin/bash
 
-
-cd ${HOME}/.local/lib/python2*/site-packages/powerline_status-dev*.egg-*/powerline/bindings/vim && path=$(pwd)
+pythonv=`ls ${HOME}/.local/lib/ | egrep python`
+cd ${HOME}/.local/lib/$pythonv/site-packages/powerline/bindings/vim && path=$(pwd)
 cd ${HOME}
 cat >> .vimrc << EOM
 set rtp+=${path}
