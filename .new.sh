@@ -20,3 +20,12 @@ user=` echo $userpath | cut -d/ -f3`
 chown -R $user:users $HOME/.vim
 chown -R $user:users $HOME/.vimrc
 chmod -R 755 $HOME/.vim*
+cd ${HOME}/.local/bin
+for i in `ls ${HOME}/.local/bin`
+do
+    ln -s ${HOME}/.local/bin/$i /usr/local/bin
+done
+chown -R $user:users $HOME/.vim
+chown -R $user:users $HOME/.vimrc
+chmod -R 755 $HOME/.vim*
+chown -R $user:users ${HOME}/.local/bin

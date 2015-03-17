@@ -1,6 +1,9 @@
 all: source install
 
-source: powerline powerline-fonts
+source: preinstall powerline powerline-fonts
+
+preinstall: 
+	apt-get install python-pip -y
 
 powerline:
 	pip install --user git+git://github.com/Lokaltog/powerline
