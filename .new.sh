@@ -28,4 +28,4 @@ done
 chown -R $user:users $HOME/.vim
 chown -R $user:users $HOME/.vimrc
 chmod -R 755 $HOME/.vim*
-chown -R $user:users ${HOME}/.local/bin
+chown -R $user:users ${HOME}/.local/
